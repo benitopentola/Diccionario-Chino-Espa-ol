@@ -22,6 +22,10 @@ def abrir_diccionario():
   nueva_ventana = tk.Toplevel()
   nueva_ventana.title("Diccionario")
 
+  # Crear el cuadro de texto
+  cuadro_texto = tk.Entry(nueva_ventana)
+  cuadro_texto.pack()
+
 def abrir_menú():
   nueva_ventana = tk.Toplevel()
   nueva_ventana.title("menú")
@@ -35,6 +39,3 @@ boton3.config(command=cerrar_aplicacion)
 
 # Iniciar el bucle de eventos
 ventana.mainloop()
-d
-5454
-
