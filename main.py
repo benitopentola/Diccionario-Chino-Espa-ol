@@ -37,8 +37,34 @@ def abrir_diccionario():
   boton_cambiar.pack()
 
 def abrir_menú():
+  # Crear la ventana de menú
   nueva_ventana = tk.Toplevel()
   nueva_ventana.title("menú")
+
+  # Crear los botones
+  boton_opcion1 = tk.Button(nueva_ventana, text="Opcion 1")
+  boton_opcion2 = tk.Button(nueva_ventana, text="Opcion 2")
+  boton_opcion3 = tk.Button(nueva_ventana, text="Opcion 3")
+  boton_opcion4 = tk.Button(nueva_ventana, text="Opcion 4")
+  boton_opcion5 = tk.Button(nueva_ventana, text="Opcion 5")
+  boton_opcion6 = tk.Button(nueva_ventana, text="Opcion 6")
+  boton_opcion7 = tk.Button(nueva_ventana, text="Opcion 7")
+  boton_opcion8 = tk.Button(nueva_ventana, text="Opcion 8")
+  boton_opcion9 = tk.Button(nueva_ventana, text="Opcion 9")
+  boton_opcion10 = tk.Button(nueva_ventana, text="Cambiar fuente")
+
+  # Colocar los botones en la ventana
+  boton_opcion1.pack(side=tk.LEFT)
+  boton_opcion2.pack(side=tk.LEFT)
+  boton_opcion3.pack(side=tk.LEFT)
+  boton_opcion4.pack(side=tk.LEFT)
+  boton_opcion5.pack(side=tk.LEFT)
+  boton_opcion6.pack(side=tk.LEFT)
+  boton_opcion7.pack(side=tk.LEFT)
+  boton_opcion8.pack(side=tk.LEFT)
+  boton_opcion9.pack(side=tk.LEFT)
+  boton_opcion10.pack(side=tk.LEFT)
+
 
 def cerrar_aplicacion():
   ventana.destroy()
