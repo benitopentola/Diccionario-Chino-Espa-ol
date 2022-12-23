@@ -51,7 +51,7 @@ def abrir_menú():
   boton_opcion7 = tk.Button(nueva_ventana, text="Opcion 7")
   boton_opcion8 = tk.Button(nueva_ventana, text="Opcion 8")
   boton_opcion9 = tk.Button(nueva_ventana, text="Opcion 9")
-  boton_opcion10 = tk.Button(nueva_ventana, text="Cambiar fuente")
+  boton_opcion10 = tk.Button(nueva_ventana, text="Cambiar fuente", command=lambda: cambiar_fuente("Times New Roman"))
 
   # Colocar los botones en la ventana
   boton_opcion1.pack(side=tk.LEFT)
@@ -95,6 +95,15 @@ def cambiar_texto():
 boton1.config(command=abrir_diccionario)
 boton2.config(command=abrir_menú)
 boton3.config(command=cerrar_aplicacion)
+
+def cambiar_fuente(nueva_fuente):
+  global cuadro_texto
+  cuadro_texto.config(font=nueva_fuente)
+  boton1.config(font=nueva_fuente)
+  boton2.config(font=nueva_fuente)
+  boton3.config(font=nueva_fuente)
+  # ... y así sucesivamente para cada elemento que necesite cambiar la fuente
+
 
 # Iniciar el bucle de eventos
 ventana.mainloop()
