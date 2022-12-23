@@ -51,7 +51,7 @@ def abrir_menú():
   boton_opcion7 = tk.Button(nueva_ventana, text="Opcion 7")
   boton_opcion8 = tk.Button(nueva_ventana, text="Opcion 8")
   boton_opcion9 = tk.Button(nueva_ventana, text="Opcion 9")
-  boton_opcion10 = tk.Button(nueva_ventana, text="Cambiar fuente", command=lambda: cambiar_fuente("Times New Roman"))
+  boton_opcion10 = tk.Button(nueva_ventana, text="Cambiar fuente")
 
   # Colocar los botones en la ventana
   boton_opcion1.pack(side=tk.LEFT)
