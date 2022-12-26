@@ -12,15 +12,22 @@ ventana.title("DICCIONARIO CHINO ESPAÑOL")
 titulo = tk.Label(ventana, text="DICCIONARIO CHINO ESPAÑOL", font=("Helvetica", 16))
 titulo.pack()
 
+def abrir_ejercicios():
+  nueva_ventana = tk.Toplevel()
+  nueva_ventana.title("Ejercicios")
+
 # Crear los botones
 boton1 = tk.Button(ventana, text="diccionario")
 boton2 = tk.Button(ventana, text="menú")
 boton3 = tk.Button(ventana, text="salir")
+boton4 = tk.Button(ventana, text="ejercicios", command=abrir_ejercicios)
 
 # Colocar los elementos en la ventana
 boton1.pack(side=tk.LEFT)
 boton2.pack(side=tk.LEFT)
+boton4.pack(side=tk.LEFT)
 boton3.pack(side=tk.LEFT)
+
 
 def abrir_diccionario():
   global cuadro_texto
@@ -103,6 +110,8 @@ def cambiar_fuente(nueva_fuente):
   boton2.config(font=nueva_fuente)
   boton3.config(font=nueva_fuente)
   # ... y así sucesivamente para cada elemento que necesite cambiar la fuente
+
+
 
 
 # Iniciar el bucle de eventos
