@@ -1,12 +1,6 @@
 import tkinter as tk
 import pinyin
 
-
-
-
-
-
-
 # Función para abrir la ventana de ejercicios
 def abrir_ejercicios():
   # Crear una nueva ventana y un marco para los botones
